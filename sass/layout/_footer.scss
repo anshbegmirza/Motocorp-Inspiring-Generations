@@ -1,0 +1,54 @@
+.footer {
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+   &-content{
+    h2{
+        margin-bottom: 1rem;
+        font-size: 3rem;
+    }
+    p{
+        margin-bottom: .5rem;
+        font-size: 1.8rem;
+    }
+   }
+    &-links {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        a {
+            color: $color-gold-2; // Gold accents
+            text-decoration: none;
+            margin: 0 15px;
+
+            &:hover {
+                color: $color-gold-1; // Lighter gold on hover
+            }
+        }
+    }
+
+    &-social {
+        margin-top: 1rem;
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 1rem;
+            font-size: 2.4rem;
+        }
+
+        .social-icon {
+            color: $color-gold-2;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.8rem;
+            &:hover {
+                color: $color-gold-1; // Lighter gold on hover
+            }
+        }
+    }
+
+    &-bottom {
+        margin-top: 20px;
+        font-size: 1.6rem;
+    }
+}

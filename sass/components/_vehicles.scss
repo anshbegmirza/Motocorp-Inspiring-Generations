@@ -1,0 +1,87 @@
+.vehicle-section {
+  padding: 50px 0;
+  background-color: #171717; // Background color to match the preferred body color
+  color: #ffffff; // Ensures text stands out on the dark background
+
+  .section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #e5e5e5;
+    font-weight: 600;
+  }
+
+  .vehicle-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .vehicle-item {
+      background-color: #363634;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      width: 45%;
+      margin: 15px 0;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+      }
+
+      img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        transition: opacity 0.3s ease;
+        
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+
+      .vehicle-info {
+        h3 {
+          font-size: 2.4rem;
+          margin-bottom: 1rem;
+          color: #ffffff;
+          
+        }
+
+        p {
+          font-size: 1.6rem;
+          margin-bottom: 2rem;
+          font-weight: 600;
+          color: #cccccc;
+        }
+
+        .btn {
+          background-color: $color-gold-2; 
+          color: #ffffff;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          font-weight: 600;
+          font-size: 1.8rem;
+          text-decoration: none;
+          transition: background-color 0.3s ease;
+          margin-bottom: .5rem;
+          display: inline-block;
+          &:hover {
+            background-color: $color-gold-1;
+          }
+        }
+      }
+    }
+
+    // Responsive adjustments for smaller screens
+    @media (max-width: 768px) {
+      .vehicle-item {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -4,8 +4,12 @@
   "description": "Motocorp | Inspiring Generations",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w "
   },
   "author": "anshbegmirza",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.79.3"
+  }
 }

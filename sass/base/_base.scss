@@ -1,0 +1,22 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+html{
+    font-size: 62.5%;
+    @media (max-width: $laptop-big){
+        font-size: 55%;
+    }
+    @media(max-width: $laptop-medium){
+        font-size: 45%;
+    }
+}
